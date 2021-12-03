@@ -4,24 +4,20 @@ import java.util.Vector;
 import ecf.fitness.IEvaluate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import org.w3c.dom.Document;
+
 import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
 
 /**
  * Razred koji predstavlja deme.
  * Deme je skup (otok) jedinki.
  * 
- * @author Marko Pielić/Rene Huić
+ * @author Marko PieliÄ‡/Rene HuiÄ‡
  */
 public class Deme extends Vector<Individual> {
 
 	private static final long serialVersionUID = 1L;
 
-	/**Sučelje sa metodom evaluate*/
+	/**SuÄ�elje sa metodom evaluate*/
 	private IEvaluate ievaluate;
 
 	/**Najbolje jedinke demea*/
@@ -33,7 +29,7 @@ public class Deme extends Vector<Individual> {
 	/**
 	 * Konstruktor koji kreira novi deme.
 	 * 
-	 * @param ievaluate Sučelje sa metodom za evaulaciju fitnessa
+	 * @param ievaluate SuÄ�elje sa metodom za evaulaciju fitnessa
 	 */
 	public Deme(IEvaluate ievaluate) {
 		this.ievaluate = ievaluate;
@@ -44,7 +40,7 @@ public class Deme extends Vector<Individual> {
 	/**
 	 * Konstruktor koji prima broj jedinki demea.
 	 * 
-	 * @param ievaluate Sučelje sa metodom za evaluaciju fitnessa
+	 * @param ievaluate SuÄ�elje sa metodom za evaluaciju fitnessa
 	 * @param brojJedinki Broj jedinki demea
 	 */
 	public Deme(IEvaluate ievaluate, int brojJedinki) {
@@ -123,7 +119,7 @@ public class Deme extends Vector<Individual> {
 
 
 	/**
-	 * Metoda koja vraća broj jedinki u demeu.
+	 * Metoda koja vraÄ‡a broj jedinki u demeu.
 	 * 
 	 * @return Broj jedinki demea
 	 */
@@ -142,7 +138,7 @@ public class Deme extends Vector<Individual> {
 
 
 	/**
-	 * Metoda koja dohvaća najbolje jedinke.
+	 * Metoda koja dohvaÄ‡a najbolje jedinke.
 	 * 
 	 * @return Najbolje jedinke
 	 */
